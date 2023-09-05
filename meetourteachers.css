@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background-section {
+  background-image: url("pexels-pixabay-210764.jpg"); /* Add the path to your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: 60%; /* Adjust the width of the rows */
+  margin: 20px 0; /* Add spacing between rows */
+}
+
+.square-photo {
+  flex: 1; /* Let the photo take up half of the row */
+  padding: 10px; /* Add spacing around the photo */
+}
+
+.square-photo img {
+  display: block;
+  width: 100%; /* Ensure the photo fills the square-photo div */
+  height: 200px; /* Maintain aspect ratio */
+  width: 150px;
+  border-radius: 5px; /* Add border radius for a rounded look */
+}
+
+.text-box {
+  flex: 2; /* Let the text box take up two-thirds of the row */
+  padding: 10px; /* Add spacing around the text box */
+}
+
+.text-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px; /* Add spacing below the title */
+}
+
+.content-overlay {
+  /* ... Other styles ... */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px; /* Increase the margin between buttons and content */
+  position: absolute;
+  top: 5px; /* Adjust the distance from the top of the section */
+  right: 60px; /* Adjust the distance from the right side of the section */
+}
+
+.button {
+  display: inline-block;
+  margin-left: 10px; /* Add space between buttons */
+  padding: 10px 20px;
+  background-color: #008080;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #006666;
+}
+
+.text-box {
+  flex: 2;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent black background */
+  color: #fff; /* Set text color to white for better contrast */
+}
+
+.text-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Abril Fatface", cursive; /* Use Abril Fatface for the <h2> elements */
+}
